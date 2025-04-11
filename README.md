@@ -3,35 +3,35 @@
 
 ## Основные компоненты ##
 ### Модели (Models) ###
--_User_: Модель пользователя с полями __username, email, hashed_password__ и __role__
+- _User_: Модель пользователя с полями __username, email, hashed_password__ и __role__
 
 - _Ticket_: Модель заявки с полями __title, description, status__ (open/in_progress/resolved/closed)
 
--_Comment_: Модель комментария к заявке
+- _Comment_: Модель комментария к заявке
 
--_Screenshot_: Модель для хранения скриншотов, прикрепленных к заявкам
+- _Screenshot_: Модель для хранения скриншотов, прикрепленных к заявкам
 
 ### Схемы (Schemas) ###
 Pydantic-схемы для валидации данных:
 
--_UserCreate, UserInDB_ - для создания и отображения пользователей
+- _UserCreate, UserInDB_ - для создания и отображения пользователей
 
--_TicketCreate, TicketUpdate, TicketInDB_ - для работы с заявками
+- _TicketCreate, TicketUpdate, TicketInDB_ - для работы с заявками
 
--_CommentCreate, CommentInDB_ - для комментариев
+- _CommentCreate, CommentInDB_ - для комментариев
 
--_ScreenshotCreate, ScreenshotInDB_ - для скриншотов
+- _ScreenshotCreate, ScreenshotInDB_ - для скриншотов
 
 ### Роутеры (Routes) ###
--_auth.py_: Аутентификация (получение JWT-токена)
+- _auth.py_: Аутентификация (получение JWT-токена)
 
--_users.py_: Управление пользователями (регистрация, просмотр)
+- _users.py_: Управление пользователями (регистрация, просмотр)
 
--_tickets.py_: Работа с заявками (создание, просмотр, добавление комментариев)
+- _tickets.py_: Работа с заявками (создание, просмотр, добавление комментариев)
 
--_files.py_: Загрузка скриншотов для заявок
+- _files.py_: Загрузка скриншотов для заявок
 
 ### Утилиты (Utils) ###
--_security.py_: Функции для работы с JWT, хеширования паролей и аутентификации
+- _security.py_: Функции для работы с JWT, хеширования паролей и аутентификации
 
--_test_auth.py_: Тесты для проверки аутентификации
+- _test_auth.py_: Тесты для проверки аутентификации
