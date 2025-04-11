@@ -5,7 +5,7 @@
 ### Модели (Models) ###
 -_User_: Модель пользователя с полями __username, email, hashed_password__ и __role__
 
--_Ticket_: Модель заявки с полями __title, description, status__ (open/in_progress/resolved/closed)
+- _Ticket_: Модель заявки с полями __title, description, status__ (open/in_progress/resolved/closed)
 
 -_Comment_: Модель комментария к заявке
 
